@@ -15,4 +15,8 @@ gulp.task('watch', function() {
     return gulp.watch('./src/scss/style.scss', gulp.series('devSass'))
 })
 
+<<<<<<< HEAD
 gulp.task('dev', gulp.series('devSass', 'watch'));
+=======
+gulp.task('dev', gulp.paraller('devSass', 'watch'));
+>>>>>>> 7fd86090b6019ad10406ba4a3038c9ad2555e75f
