@@ -77,16 +77,17 @@ section {
     }
 }
 
+.banner {
+    position: relative;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
 .pagination {
     position: absolute;
     left: 43%!important;
-    top: 92%!important;
+    top: 13%!important;
     z-index: 999!important;
-}
-
-.banner {
-    background: #fff;
-    border-bottom: 1px solid #ccc;
 }
 
 .pic {
