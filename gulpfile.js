@@ -7,6 +7,7 @@ var url = require('url');
 var fs = require('fs');
 var path = require('path');
 var listjson = require('./src/mock/list.json');
+var bannerjson = require('./src/mock/banner.json');
 
 gulp.task('devSass', function() {
     return gulp.src('./src/scss/style.scss')
@@ -35,11 +36,14 @@ gulp.task('devServer', function() {
 
                 if (pathname === '/api/list') { //请求接口
                     res.end(JSON.stringify({ code: 1, data: listjson }));
+                } else if (pathname === '/api/banner') {
+                    res.end(JSON.stringify({ code: 1, data: bannerjson }));
                 } else {
                     //请求文件
                     pathname = pathname === '/' ? 'index.html' : pathname;
                     res.end(fs.readFileSync(path.join(__dirname, 'src', pathname)));
                 }
+
             }
         }))
 })

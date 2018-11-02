@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="iconfont/fonts/iconfont.css">
     <script src="js/libs/flexible.js"></script>
+
     <script src="js/swiper.min.js"></script>
 
 </head>
 
 <body>
     <div class="wrap">
-        <header>
+        <header style="background: #06c1ae">
             <span>北京 <i class="iconfont icon-xiangxia"></i></span>
             <form action="post">
                 <i class="iconfont icon-fangdajing"></i>
@@ -28,116 +29,39 @@
             </div>
         </header>
         <section>
-            <img src="img/1.gif" alt="" class="pic">
-            <div class="swiper-container banner">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="logo">
-                            <img src="img/2.gif" alt="">
-                            <span>美食</span>
-                        </div>
-                        <div class="logo">
-                            <img src="img/2.gif" alt="">
-                            <span>美食</span>
-                        </div>
-                        <div class="logo">
-                            <img src="img/2.gif" alt="">
-                            <span>美食</span>
-                        </div>
-                        <div class="logo">
-                            <img src="img/2.gif" alt="">
-                            <span>美食</span>
-                        </div>
-                        <div class="logo">
-                            <img src="img/2.gif" alt="">
-                            <span>美食</span>
-                        </div>
-                        <div class="logo">
-                            <img src="img/2.gif" alt="">
-                            <span>美食</span>
-                        </div>
-                        <div class="logo">
-                            <img src="img/2.gif" alt="">
-                            <span>美食</span>
-                        </div>
-                        <div class="logo">
-                            <img src="img/2.gif" alt="">
-                            <span>美食</span>
-                        </div>
-                        <div class="logo">
-                            <img src="img/2.gif" alt="">
-                            <span>美食</span>
-                        </div>
-                        <div class="logo">
-                            <img src="img/2.gif" alt="">
-                            <span>美食</span>
-                        </div>
+            <div class="scroll">
+                <img src="img/1.gif" alt="" class="pic">
+                <div class="swiper-container banner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" id="list1"></div>
+                        <div class="swiper-slide" id="list2"></div>
                     </div>
-                    <div class="swiper-slide">
-                        <div class="logo">
-                            <img src="img/3.gif" alt="">
-                            <span>美食</span>
-                        </div>
-                        <div class="logo">
-                            <img src="img/3.gif" alt="">
-                            <span>美食</span>
-                        </div>
-                        <div class="logo">
-                            <img src="img/3.gif" alt="">
-                            <span>美食</span>
-                        </div>
-                        <div class="logo">
-                            <img src="img/3.gif" alt="">
-                            <span>美食</span>
-                        </div>
-                        <div class="logo">
-                            <img src="img/3.gif" alt="">
-                            <span>美食</span>
-                        </div>
-                        <div class="logo">
-                            <img src="img/3.gif" alt="">
-                            <span>美食</span>
-                        </div>
-                        <div class="logo">
-                            <img src="img/3.gif" alt="">
-                            <span>美食</span>
-                        </div>
-                        <div class="logo">
-                            <img src="img/3.gif" alt="">
-                            <span>美食</span>
-                        </div>
-                        <div class="logo">
-                            <img src="img/3.gif" alt="">
-                            <span>美食</span>
-                        </div>
-                        <div class="logo">
-                            <img src="img/3.gif" alt="">
-                            <span>美食</span>
-                        </div>
-                    </div>
+                    <div class="pagination"></div>
                 </div>
-                <div class="pagination"></div>
                 <p class="like">猜你喜欢</p>
                 <div class="xr">
                     <!-- <div class="every">
-                    <div class="pict"><img src="img/4.gif" alt=""></div>
-                    <div class="right">
-                        <div class="top">
-                            <h3>全聚德</h3>
-                            <span>【东城区】精品烤鸭3-4人餐1份</span>
-                        </div>
-                        <div class="bottom">
-                            <b>398元</b>
-                            <h5>门市价:498元</h5>
-                        </div>
-                    </div>
-                </div> -->
+                            <div class="pict"><img src="img/4.gif" alt=""></div>
+                            <div class="right">
+                                <div class="top">
+                                    <h3>全聚德</h3>
+                                    <span>【东城区】精品烤鸭3-4人餐1份</span>
+                                </div>
+                                <div class="bottom">
+                                    <b>398元</b>
+                                    <h5>门市价:498元</h5>
+                                </div>
+                            </div>
+                        </div> -->
                 </div>
+                <div class="pullDown">下拉刷新</div>
+                <div class="pullUp">上拉加载</div>
+            </div>
         </section>
-        </div>
-
-        <script src="js/ajax.js"></script>
-        <script src="js/index.js"></script>
+    </div>
+    <script src="js/libs/better-scroll.js"></script>
+    <script src="js/ajax.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
